@@ -1,0 +1,102 @@
+// I swear I don't use !important in production code :D
+.v-btn__content {
+  line-height: 1 !important;
+}
+.Vue-Toastification__toast--success {
+  background-color: var(--c-primaty) !important;
+}
+body .v-theme--myCustomDarkTheme {
+  --v-theme-surface: 17,24,39;
+  --v-theme-background: 13,18,27;
+  --v-theme-on-surface: 217, 230, 235;
+  --v-theme-on-background: 215, 215, 215;
+  --v-hover-opacity: 0.4;
+  --v-focus-opacity: 0.6;
+  .v-text-field input {
+    color: #ffffff;
+  }
+}
+.router-link-exact-active {
+  text-shadow: 2px 2px 30px #ff99cc,
+  -2px -2px 30px #ff99cc;
+}
+.v-btn:hover > .v-btn__overlay {
+  background: rgb(var(--v-theme-primary)) !important;
+}
+.v-btn:hover > .v-btn__overlay {
+  opacity: 0 !important;
+}
+#app_container {
+  height: 100%;
+  position: relative;
+  &:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-image: url(~/assets/images/pinia.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .v-main {
+    position: relative !important;
+    z-index: 99;
+  }
+}
+.v-field--variant-filled .v-field__overlay {
+  background-color: #000000 !important;
+  opacity: 0.34 !important;
+}
+.v-field-label {
+  color: var(--c-accent) !important;
+  font-weight: 300;
+}
+.v-field__input {
+  color: #ffffff !important;
+}
+#__nuxt {
+  .v-data-table-column--no-padding .v-btn--icon {
+    border: solid 1px rgba(var(--v-theme-primary), 0.6);
+  }
+  .v-data-table__tr .v-btn--icon {
+    background-color: transparent !important;
+  }
+  .v-data-table-column--no-padding .close_icon {
+    border: solid 1px rgba(230,24,51, 0.6) !important;
+  }
+  .v-data-table__tr {
+    &:nth-child(odd){
+      background-color: rgba(0,0,0,.12);
+    }
+  }
+  .input_with_error .v-field__outline {
+    color: rgb(var(--v-theme-error));
+  }
+  .input_with_success .v-field__outline {
+    color: rgb(var(--v-theme-success));
+  }
+}
+
+.v-table__wrapper > table tbody > tr > td {
+  background: transparent !important;
+}
+
+.v-table {
+  background: rgba(var(--v-theme-surface), 0.94) !important;
+}
+.tr_expanded {
+  filter: hue-rotate(300deg);
+  background: rgba(var(--v-theme-surface), 0.94);
+}
+td {
+  cursor: default;
+}
+.v-field--variant-outlined .v-field__outline__notch {
+  border: none !important;
+}
+// I swear I don't use !important in production code :D

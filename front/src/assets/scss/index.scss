@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./override";
+:root {
+  --c-primaty: #42B883;
+  --c-error: #B00020;
+  --c-info: #2196F3;
+  --c-success: #4CAF50;
+  --c-warning: #FB8C00;
+  --c-accent: #ffd859;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+h1 {
+  @apply text-sky-400;
+  text-align: center;
+  margin-bottom: .4em;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100%;
+  &--sm {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+  }
+  &--xs {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+  }
+}
+
+@layer utilities{
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
